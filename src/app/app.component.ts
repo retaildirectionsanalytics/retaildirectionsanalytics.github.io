@@ -16,28 +16,28 @@ export class AppComponent {
   }
   sales_current(){
     this.title = "sales_current";
-    this.gAnalytics4Service.virtualPageViewEvent(location.hostname+this.title, this.title);
+    this.gAnalytics4Service.virtualPageViewEvent(location.hostname+this.title, this.title,"/sales/"+this.title);
   }
   sales_overview(){
     this.title = "sales_overview";
-    this.gAnalytics4Service.virtualPageViewEvent(location.hostname+this.title, this.title);
+    this.gAnalytics4Service.virtualPageViewEvent(location.hostname+this.title, this.title,"/sales/"+this.title);
   }
 
   trade(){
     this.title = "trade";
-    this.gAnalytics4Service.virtualPageViewEvent(location.hostname+this.title, this.title);
+    this.gAnalytics4Service.virtualPageViewEvent(location.hostname+this.title, this.title,"/sales/"+this.title);
   }
   best_worst_sellers(){
     this.title = "best_worst_sellers";
-    this.gAnalytics4Service.virtualPageViewEvent(location.hostname+this.title, this.title);
+    this.gAnalytics4Service.virtualPageViewEvent(location.hostname+this.title, this.title,"/sales/"+this.title);
   }
   store_metrics(){
     this.title = "store_metrics";
-    this.gAnalytics4Service.virtualPageViewEvent(location.hostname+this.title, this.title);
+    this.gAnalytics4Service.virtualPageViewEvent(location.hostname+this.title, this.title,"/operations/"+this.title);
   }
   store_cash_management(){
     this.title = "store_cash_management";
-    this.gAnalytics4Service.virtualPageViewEvent(location.hostname+this.title, this.title);
+    this.gAnalytics4Service.virtualPageViewEvent(location.hostname+this.title, this.title,"/operations/"+this.title);
   }
 
 
