@@ -30,14 +30,17 @@ export class AppComponent {
   best_worst_sellers(){
     this.title = "best_worst_sellers";
     this.gAnalytics4Service.virtualPageViewEvent(location.hostname+this.title, this.title,"/sales/"+this.title);
+    this.gAnalytics4Service.pageExecutionTimeEvent(this.title, 3);
   }
   store_metrics(){
     this.title = "store_metrics";
     this.gAnalytics4Service.virtualPageViewEvent(location.hostname+this.title, this.title,"/operations/"+this.title);
+    this.gAnalytics4Service.pageExecutionTimeEvent(this.title, 10);
   }
   store_cash_management(){
     this.title = "store_cash_management";
     this.gAnalytics4Service.virtualPageViewEvent(location.hostname+this.title, this.title,"/operations/"+this.title);
+    this.gAnalytics4Service.pageExecutionTimeEvent(this.title, 20);
   }
 
 

@@ -7,7 +7,7 @@ declare let gtag: Function;
 export class GAnalytics4Service {
 
   constructor() { }
-  virtualPageViewEvent(page_location?: string, pageTitle?: string, site_mnemonic?: string, version?: string, page_path: string = '') {
+  virtualPageViewEvent(page_location?: string, pageTitle?: string, page_path: string = '', site_mnemonic?: string, version?: string) {
     window.dataLayer.push({
       'event': 'pageview',
       'page_location': page_location || window.location.href,
@@ -17,7 +17,15 @@ export class GAnalytics4Service {
       'site_mnemonic': site_mnemonic || 'COTTONON',
       'version': version || '23.2.2.1'
     });
-
+  }
+    pageExecutionTimeEvent(pageTitle?: string, duration?:number,site_mnemonic?: string, version?: string) {
+      window.dataLayer.push({
+        'event': 'page_execution_time',
+        'page_title': pageTitle,
+        'duration':duration,
+        'site_mnemonic': site_mnemonic || 'COTTONON',
+        'version': version || '23.2.2.1'
+      });
     //   window.dataLayer.push({
     //     'event': 'pageview',
     //     'page_location': window.location.href,
