@@ -9,7 +9,7 @@ export class GAnalytics4Service {
   constructor() { }
   virtualPageViewEvent(page_location?: string, pageTitle?: string, page_path: string = '', site_mnemonic?: string, version?: string) {
     window.dataLayer.push({
-      'event': 'pageview',
+      'event': 'page_view',
       'page_location': page_location || window.location.href,
       'page_title': pageTitle,
       'page_path': page_path || location.pathname,
