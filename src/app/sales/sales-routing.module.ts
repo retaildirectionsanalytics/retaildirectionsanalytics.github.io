@@ -9,7 +9,6 @@ const routes: Routes = [
   { path: '',
   // eslint-disable-next-line max-len
   redirectTo: 'sales_current',
-  pathMatch: 'full',
   data: {
       breadcrumb: 'Live Sales',
   } },

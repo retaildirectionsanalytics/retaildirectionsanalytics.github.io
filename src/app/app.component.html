@@ -1,12 +1,17 @@
-<h1>Test page</h1>
+<h1>{{title}}</h1>
 <router-outlet></router-outlet> 
 <br/>
 <br/>
 <br/>
-<a href="/">Home</a><br/>
+<!-- <a href="/">Home</a><br/>
 <a href="/sales/sales_current">sales_current</a><br/>
 <a href="/sales/sales_overview">sales_overview</a><br/>
 <a href="/sales/trade">trade</a><br/>
 <a href="/sales/best_worst_sellers">best_worst_sellers</a><br/>
 <a href="/operations/store_metrics">store_metrics</a><br/>
-<a href="/operations/store_cash_management">store_cash_management</a><br/>
+<a href="/operations/store_cash_management">store_cash_management</a><br/> -->
+<button (click)="sales_current()">sales_current</button><br/>
+<button (click)="sales_overview()">sales_overview</button><br/>
+<button (click)="trade()">trade</button><br/>
+<button (click)="best_worst_sellers()">best_worst_sellers</button><br/>
+<button (click)="store_metrics()">store_metrics</button><br/>
